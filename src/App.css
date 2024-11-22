@@ -4,35 +4,73 @@
 }
 
 .vvLogo {
+  display: flex;
   align-items: left !important;
-  width: 30%; 
-}
-
-.linkHeader {
-  text-align: center !important;
-  background-color: #4DFFD4;
-  margin: 15%;
-  color: black;
-  width: 100%;
-}
-
-.linkHeader:hover {
-  color: white;
-  text-shadow: 0 0 15px #1FE7B8;
+  flex-shrink: 0;
+  width: 250px;
+  height: auto; /* Maintain aspect ratio */
+  max-width: none; /* Ensure it doesn't exceed the container */
 }
 
 .header {
   display: flex;
-  background-color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  padding: 10px 20px;
+  margin: 5px;
+}
+/* Media query for smaller devices */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Align items to the start */
+    text-align: center;
+  }
+
+  .vvLogo {
+    width: 250px; /* Keep the logo at a fixed size */
+  }
+
+  .navLinks {
+    margin-top: 10px; /* Add some space between logo and links */
+  }
 }
 
 .dropdownItem {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black; /* Change to your desired color */
+  display: inline-block; /* Make it behave like a button */
+  padding: 10px 20px; /* Add padding for a button-like appearance */
+  background-color: #23B887; /* Background color */
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition */
+  font-weight: 400;
 }
 
 .dropdownItem:hover {
-  background-color: #f0f0f0; /* Change to your desired hover color */
+  color: white;
+  text-shadow: 0 0 15px #1FE7B8;
+}
+
+.navHeader {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.linkButton {
+  display: inline-block; /* Make it behave like a button */
+  padding: 10px 20px; /* Add padding for a button-like appearance */
+  background-color: #23B887; /* Background color */
+  color: #000; /* Text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition */
+  font-weight: 400;
+}
+
+.linkButton:hover {
+  color: white;
+  text-shadow: 0 0 15px #1FE7B8;
 }

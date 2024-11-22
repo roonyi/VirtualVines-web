@@ -10,17 +10,19 @@ export const Header = (props) => {
     };
     return(          
         <Container fluid>
-            <Row style={{ display: 'flex', alignItems: 'center',  width: '100%' }}>
-                <Col xs="auto" lg="2">
+            <Row className="header">
+                <Col>
                     <img src={props.header.logo} className="vvLogo" alt="vvLogo" />
                 </Col>
-                <Col style={{ flexGrow: 1 }}>
-                    <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '10px' }}>
-                        <Link href="/" className="linkHeader">
-                            Home
-                        </Link>
-                        <div style={{ position: 'relative' }}>
-                            <span onClick={toggleDropdown} className="linkHeader" style={{ cursor: 'pointer' }}>
+                <Col>
+                    <nav className="navHeader">
+                        <Col>
+                            <Link to="/" className="linkButton">
+                                Home
+                            </Link>
+                        </Col>
+                        <Col>
+                            <span onClick={toggleDropdown} className="linkButton" style={{ cursor: 'pointer' }}>
                                 Products
                             </span>
                             {dropdownOpen && (
@@ -28,10 +30,12 @@ export const Header = (props) => {
                                     <Link to="/myweek" className="dropdownItem">MyWeek</Link>
                                 </div>
                             )}
-                        </div>
-                        <Link href="/contact" className="linkHeader">
-                            Contact
-                        </Link>
+                        </Col>
+                        <Col>
+                            <Link to="/contact" className="linkButton">
+                                Contact
+                            </Link>
+                        </Col>
                     </nav>
                 </Col>
             </Row>
