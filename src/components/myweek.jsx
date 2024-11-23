@@ -1,7 +1,7 @@
 import Header from './header.jsx'
 import Footer from './footer.jsx'
 
-export const Contact = (props) => {
+export const MyWeek = (props) => {
     return(
         <>
             <Header header={props.header} className='header'/>
@@ -10,4 +10,4 @@ export const Contact = (props) => {
     );
 }
 
-export default Contact;
+export default MyWeek;

@@ -3,6 +3,7 @@
   height: 100%;
 }
 
+/* Header */
 .vvLogo {
   display: flex;
   align-items: left !important;
@@ -41,8 +42,8 @@
 .dropdownItem {
   display: inline-block; /* Make it behave like a button */
   padding: 10px 20px; /* Add padding for a button-like appearance */
-  background-color: #23B887; /* Background color */
-  color: #000; /* Text color */
+  background-color: #041510; /* Background color */
+  color: white; /* Text color */
   text-decoration: none; /* Remove underline */
   transition: background-color 0.3s; /* Smooth transition */
   font-weight: 400;
@@ -63,8 +64,8 @@
 .linkButton {
   display: inline-block; /* Make it behave like a button */
   padding: 10px 20px; /* Add padding for a button-like appearance */
-  background-color: #23B887; /* Background color */
-  color: #000; /* Text color */
+  background-color: #041510; /* Background color */
+  color: white; /* Text color */
   text-decoration: none; /* Remove underline */
   transition: background-color 0.3s; /* Smooth transition */
   font-weight: 400;
@@ -73,4 +74,40 @@
 .linkButton:hover {
   color: white;
   text-shadow: 0 0 15px #1FE7B8;
+}
+
+.activeLink {
+  background-color: #1FE7B8; /* Background color for active link */
+  color: black; /* Text color for active link */
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3rem 0rem;
+  background-color: #1FE7B8;
+}
+
+.footerText {
+  margin: 0;
+  font-weight: normal;
+  padding-left: 4rem;
+}
+
+.mediaIconsYoutube {
+  width: 40px;
+  height: 40px;
+  padding-right: 4rem;
+}
+
+.mediaIconsX {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.25rem;
+  padding-right: 5rem;
 }
