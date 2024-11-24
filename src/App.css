@@ -82,7 +82,6 @@
 }
 
 /* Footer */
-
 .footer {
   display: flex;
   flex-direction: row;
@@ -110,4 +109,70 @@
   height: 30px;
   margin-bottom: 0.25rem;
   padding-right: 5rem;
+}
+
+/* Home */
+.hero-title {
+  color: #1FE7B8;  
+  font-size: 5rem;  
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  text-align: center;
+  max-width: 12ch; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-subtitle {
+  color: #1FE7B8; 
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero-section {
+  padding: 3rem 0;
+  background-color: #041510;
+  position: relative;
+  /* min-height: 80vh; */
+  overflow: hidden;
+}
+
+.background-pattern {
+  position: absolute;
+  pointer-events: none;
+}
+
+.pattern-left {
+  top: -50px;
+  left: -30px;
+  transform: rotate(-15deg);
+}
+
+.pattern-right {
+  bottom: -100px;
+  right: -10px;
+  transform: rotate(15deg);
+}
+
+/* Ensure text remains on top */
+.hero-title, .hero-subtitle {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Add subtle animation */
+@keyframes slowRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.pattern-left svg {
+  animation: slowRotate 60s linear infinite;
+}
+
+.pattern-right svg {
+  animation: slowRotate 80s linear infinite reverse;
 }
