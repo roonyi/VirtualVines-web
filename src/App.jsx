@@ -8,6 +8,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const detail = {
     header: {logo: '/VV_logo_extended.png'},
+    home: { heroTitle:'We Empower Businesses',
+            heroSubtitle:'We build Micro SaaS Solutions',
+            pic1:'failfast.jpg',
+            title1:'Fail fast',
+            text1:'We encorage our team to learn fast and automate as much as possible.',
+            pic2:'adoptadapt.jpg',
+            title2:'Adopt & Adapt',
+            text2:'Lets use what is working and make it better.',
+            pic3:'customerfocus.jpg', 
+            title3:'Customer focus',
+            text3:'We are always looking for the next pain to solve and how to improve our solutions. We love feedback.',
+    },
     footer: {textFooter: '© 2024. All Rights Reserved.',
             youtubeIcon:'youtube Icon.png',
             xIcon:'X Icon.png'

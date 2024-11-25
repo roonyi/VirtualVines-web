@@ -54,15 +54,56 @@ export const Home = (props) => {
                 </div>
 
                 <Row className="justify-content-center position-relative">
-                    <h1 className="hero-title">We Empower<br/>Businesses</h1>
+                    <h1 className="hero-title">{props.home.heroTitle}</h1>
                 </Row>
                 <Row className="justify-content-center position-relative">
-                    <h4 className="hero-subtitle">We build Micro SaaS Solutions</h4>
+                    <h4 className="hero-subtitle">{props.home.heroSubtitle}</h4>
                 </Row>
             </Container>
-            <Container  className="hero-section">
-                <Row className="justify-content-center">
-                    <h1 className="hero-title">We Empower Businesses</h1>
+            {/* Features Section */}
+            <Container fluid className="features-section">
+                <Row className="justify-content-center g-4 features-section-row">
+                    <Col lg={4}>
+                        <div className="feature-card">
+                            <img 
+                                src={props.home.pic1} 
+                                alt="Team Meeting" 
+                                className="feature-image"
+                            />
+                            <h3 className="feature-title">{props.home.title1}</h3>
+                            <p className="feature-text">
+                                {props.home.text1}
+                            </p>
+                        </div>
+                    </Col>
+
+                    <Col lg={4}>
+                        <div className="feature-card">
+                            <img 
+                                src={props.home.pic2} 
+                                alt="Forward Thinking" 
+                                className="feature-image"
+                            />
+                            <h3 className="feature-title">{props.home.title2}</h3>
+                            <p className="feature-text">
+                                {props.home.text2}
+                            </p>
+                        </div>
+                    </Col>
+
+                    <Col lg={4}>
+                        <div className="feature-card">
+                            <img 
+                                src={props.home.pic3} 
+                                alt="Partnership" 
+                                className="feature-image"
+                            />
+                            <h3 className="feature-title">{props.home.title3}</h3>
+                            <p className="feature-text">
+                                {props.home.text3}
+                            </p>
+                        </div>
+                    </Col>
                 </Row>
             </Container>
 

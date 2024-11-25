@@ -176,3 +176,90 @@
 .pattern-right svg {
   animation: slowRotate 80s linear infinite reverse;
 }
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
+  background-color: #041510; 
+}
+
+.features-section-row{
+  display: flex;
+  gap: 3rem;  /* Add space between cards */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #041510;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center content horizontally */
+  padding: 1rem;  
+  /* Fixed dimensions */
+  width: 360px;  /* Fixed width for all cards */
+  min-height: 450px;  /* Minimum height for all cards */
+  flex: 0 0 auto;  /* Prevent flex growing/shrinking */
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.feature-title {
+  color: #1FE7B8;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature-text {
+  color: #1FE7B8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  /* padding: 0rem 2rem; */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .features-section {
+      padding: 3rem 1rem;
+  }
+ 
+  .features-section-row {
+    gap: 1.5rem;
+  }
+
+  .feature-card {
+      width: 100%; /* Full width on mobile */
+      max-width: 400px; /* Maximum width on mobile */
+      min-height: auto; /* Allow height to adjust */
+      margin-bottom: 1.5rem;
+  }
+
+  .feature-image {
+      height: 180px; /* Slightly smaller images on mobile */
+  }
+  
+  .feature-title {
+      font-size: 1.5rem;
+  }
+  
+  .feature-text {
+      font-size: 1rem;
+  }
+}
