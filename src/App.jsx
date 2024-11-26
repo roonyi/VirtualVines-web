@@ -23,6 +23,12 @@ function App() {
     footer: {textFooter: '© 2024. All Rights Reserved.',
             youtubeIcon:'youtube Icon.png',
             xIcon:'X Icon.png'
+    },
+    contact: {pic1:'office.jpg',
+              title:'Contact us today',
+              subtitle:'Discover how our solutions can help you achieve your goals.',
+              salesEmail:'sales.growth@virtualvines.io',
+              supportEmail: 'support.service@virtualvines.io'
     }
   }
   console.log("detail: ", detail)
@@ -32,8 +38,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<Home header={detail?.header} footer={detail?.footer} home={detail?.home} />} />
-        <Route path="/MyWeek" element={<MyWeek header={detail?.header} footer={detail?.footer} aboutus={detail?.aboutus} />} />
-        <Route path="/contact" element={<Contact header={detail?.header} footer={detail?.footer} faq={detail?.faq} />} />
+        <Route path="/MyWeek" element={<MyWeek header={detail?.header} footer={detail?.footer} myweek={detail?.myweek} />} />
+        <Route path="/contact" element={<Contact header={detail?.header} footer={detail?.footer} contact={detail?.contact} />} />
       </Routes>
     </BrowserRouter>
     </>

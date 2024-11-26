@@ -23,7 +23,7 @@
   margin: 5px;
 }
 /* Media query for smaller devices */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .header {
     flex-direction: column; /* Stack items vertically on smaller screens */
     align-items: center; /* Align items to the start */
@@ -261,5 +261,41 @@
   
   .feature-text {
       font-size: 1rem;
+  }
+}
+
+/* Contact */
+.contact-section {
+  display: flex;
+  height: 100%;
+  padding: 4rem 2rem;
+  gap: 10rem;
+  margin: 1rem;
+  align-items: center;
+}
+.contact-image {
+  width: 450px;
+  height: 600px;
+}
+.contact-p {
+  color: #1FE7B8;
+  font-size: 1.25rem;
+  gap: 1rem;
+  line-height: 0.5;
+}
+
+.contact-e {
+  color: white;
+  font-size: 1.25rem;
+  gap: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0rem 1rem;
+    margin: 0rem;
   }
 }
