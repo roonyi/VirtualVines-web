@@ -29,6 +29,9 @@ function App() {
               subtitle:'Discover how our solutions can help you achieve your goals.',
               salesEmail:'sales.growth@virtualvines.io',
               supportEmail: 'support.service@virtualvines.io'
+    },
+    myweek:{
+      logo:'MW_logo_extended.png'
     }
   }
   console.log("detail: ", detail)
