@@ -4,6 +4,27 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
 export const MyWeek = (props) => {
+     // Constant for the Carousels
+     const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 5
+          },
+          desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 3
+          },
+          tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 2
+          },
+          mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+          }
+      };
+
     return(
         <>
             <Header header={props.header} className='header'/>
@@ -54,8 +75,8 @@ export const MyWeek = (props) => {
                                 return (<WebContent info={elementArray} alterClassHint={'card'}/>)
                                     })
                                 } */}
-                            <Card src={props.myweek.logo}/>
-                            <Card src={props.myweek.logo}/>
+                            <img src={props.myweek.logo } className="mwLogo" alt="mwLogo"/>
+                            <img src={props.myweek.logo} className="mwLogo" alt="mwLogo"/>
                         </Carousel>
                 </Row>
                 <Row className='myweek-row3'>
