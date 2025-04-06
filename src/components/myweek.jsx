@@ -1,6 +1,7 @@
 import Header from './header.jsx'
 import Footer from './footer.jsx'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 export const MyWeek = (props) => {
     return(
@@ -33,6 +34,29 @@ export const MyWeek = (props) => {
                             />
                         </Row>
                     </Col> */}
+                    <Carousel 
+                            responsive={responsive}
+                            infinite={true}
+                            // autoPlay={true}
+                            // autoPlaySpeed={3000}
+                            arrows={true}
+                            showDots={true}
+                            // sliderClass={'carousel'}
+                            containerClass={'carousel-container'}
+                            dotListClass={'carousel-dotlist'}
+                            // renderDotsOutside={true}
+                            // removeArrowOnDeviceType={["desktop", "mobile", "tablet" ]}
+                            removeArrowOnDeviceType={["superLargeDesktop","desktop"]}
+                            >
+                                {/* {
+                                props.content?.products.component?.elements?.map((element) => {
+                                let elementArray = [element];
+                                return (<WebContent info={elementArray} alterClassHint={'card'}/>)
+                                    })
+                                } */}
+                            <Card src={props.myweek.logo}/>
+                            <Card src={props.myweek.logo}/>
+                        </Carousel>
                 </Row>
                 <Row className='myweek-row3'>
 
