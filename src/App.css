@@ -348,4 +348,34 @@
 
 .myweek-row2 {
   background-color:#041510;
+  /* display: flex; */
+  /* flex-direction: column; */
+  width: 200px;
+  height: auto; 
+  max-width: none;
+
+}
+
+/* Make sure only one slide is visible */
+.carousel-inner .carousel-item {
+  display: none;
+}
+
+.carousel-inner .carousel-item.active {
+  display: block;
+}
+
+/* Center images in carousel */
+.carousel-inner .carousel-item img {
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+}
+
+.carousel img {
+  object-fit: contain;
 }

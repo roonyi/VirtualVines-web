@@ -31,7 +31,11 @@ function App() {
               supportEmail: 'support.service@virtualvines.io'
     },
     myweek:{
-      logo:'MW_logo_extended.png'
+      logo:'MW_logo_extended.png',
+      card1:'presi1.png',
+      card2:'presi2.png',
+      card3:'presi3.png',
+      card4:'presi4.png' 
     }
   }
   console.log("detail: ", detail)

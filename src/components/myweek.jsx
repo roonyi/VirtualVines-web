@@ -33,51 +33,31 @@ export const MyWeek = (props) => {
                     <img src={props.myweek.logo} className="mwLogo" alt="mwLogo" />
                 </Row>
                 <Row className='myweek-row2'>
-                    {/* <Col>
-                        <Row className="justify-content-center position-relative">
-                            <h1 className="hero-title">{props.contact.title}</h1>
-                        </Row>
-                        <Row className="justify-content-center position-relative">
-                            <h4 className="hero-subtitle">{props.contact.subtitle}</h4>
-                        </Row>
-                        <Row className="justify-content-center position-relative">
-                            <span className="contact-p">Sales email: <a href={`mailto:${props.contact.salesEmail}`} className="contact-e">{props.contact.salesEmail}</a></span>
-                            <br></br>
-                            <span className="contact-p">Support email: <a href={`mailto:${props.contact.supportEmail}`} className="contact-e">{props.contact.supportEmail}</a></span>
-                        </Row>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <img 
-                                src={props.contact.pic1} 
-                                alt="Partnership" 
-                                className="contact-image"
-                            />
-                        </Row>
-                    </Col> */}
-                    <Carousel 
-                            responsive={responsive}
-                            infinite={true}
-                            // autoPlay={true}
-                            // autoPlaySpeed={3000}
-                            arrows={true}
-                            showDots={true}
-                            // sliderClass={'carousel'}
-                            containerClass={'carousel-container'}
-                            dotListClass={'carousel-dotlist'}
-                            // renderDotsOutside={true}
-                            // removeArrowOnDeviceType={["desktop", "mobile", "tablet" ]}
-                            removeArrowOnDeviceType={["superLargeDesktop","desktop"]}
+                    <Col className="d-flex justify-content-center">
+                        <div className="carousel-wrapper" style={{ maxWidth: '600px', width: '100%' }}>
+                            <Carousel 
+                                slide={true}
+                                interval={3000}
+                                controls={true}
+                                indicators={true}
                             >
-                                {/* {
-                                props.content?.products.component?.elements?.map((element) => {
-                                let elementArray = [element];
-                                return (<WebContent info={elementArray} alterClassHint={'card'}/>)
-                                    })
-                                } */}
-                            <img src={props.myweek.logo } className="mwLogo" alt="mwLogo"/>
-                            <img src={props.myweek.logo} className="mwLogo" alt="mwLogo"/>
-                        </Carousel>
+                                <Carousel.Item>
+                                    <img 
+                                        src={props.myweek.card1} 
+                                        className="d-block w-100" 
+                                        alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img 
+                                        src={props.myweek.card2} 
+                                        className="d-block w-100" 
+                                        alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+                        </div>
+                    </Col>
                 </Row>
                 <Row className='myweek-row3'>
 
