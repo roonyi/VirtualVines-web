@@ -32,6 +32,7 @@ function App() {
     },
     myweek:{
       logo:'MW_logo_extended.png',
+      cards: ['presi1.png','presi2.png','presi3.png','presi4.png'],
       card1:'presi1.png',
       card2:'presi2.png',
       card3:'presi3.png',

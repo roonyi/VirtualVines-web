@@ -49,20 +49,15 @@ export const MyWeek = (props) => {
                                 nextLabel={""}
                                 className="corner-controls"
                             >
-                                <Carousel.Item>
+                            {props.myweek.cards.map((imageName, index) => (
+                                <Carousel.Item key={index}>
                                     <img 
-                                        src={props.myweek.card1} 
-                                        className="card-img" 
-                                        alt="First slide"
+                                    src={imageName} 
+                                    className="card-img" 
+                                    alt={`Slide ${index + 1}`}
                                     />
                                 </Carousel.Item>
-                                <Carousel.Item>
-                                    <img 
-                                        src={props.myweek.card2} 
-                                        className="card-img" 
-                                        alt="Second slide"
-                                    />
-                                </Carousel.Item>
+                                ))}
                             </Carousel>
                         </div>
                     </Col>
