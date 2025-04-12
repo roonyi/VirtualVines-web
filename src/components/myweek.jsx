@@ -63,7 +63,21 @@ export const MyWeek = (props) => {
                     </Col>
                 </Row>
                 <Row className='myweek-row3'>
-
+                    <Col className="d-flex justify-content-center my-4">
+                        <video 
+                        controls
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        width="970"
+                        className="myweek-video"
+                        style={{ objectFit: 'cover' }}
+                        >
+                        <source src={props.myweek.video} type="video/mp4" />
+                        {/* Your browser does not support the video tag. */}
+                        </video>
+                    </Col>
                 </Row>
             </Container>
             <Footer footer={props.footer} className='footer'/>
