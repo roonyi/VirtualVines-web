@@ -70,7 +70,7 @@ export const MyWeek = (props) => {
                         muted
                         loop
                         playsInline
-                        width="970"
+                        // width="970"
                         className="myweek-video"
                         style={{ objectFit: 'cover' }}
                         >
