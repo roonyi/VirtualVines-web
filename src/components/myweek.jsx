@@ -83,7 +83,7 @@ export const MyWeek = (props) => {
                 {/* Documentation */}
                 <Container fluid className="features-section">
                   <Row className="justify-content-center g-4 features-section-row">
-                      <Col lg={4}>
+                      <Col lg={3}>
                         <a href="https://view.monday.com/5081062502-ce52274974268e83c8ca66013de75577?r=use1" 
                           target="_blank" 
                           rel="noopener noreferrer" 
@@ -101,7 +101,7 @@ export const MyWeek = (props) => {
                           </div>
                         </a>
                       </Col>
-                      <Col lg={4}>
+                      <Col lg={3}>
                         <a href="https://view.monday.com/8964716204-95b8f950bb30f8a4161dec389eb2f8d5?r=use1" 
                           target="_blank" 
                           rel="noopener noreferrer" 
@@ -120,7 +120,7 @@ export const MyWeek = (props) => {
                         </a>  
                       </Col>
 
-                      <Col lg={4}>
+                      <Col lg={3}>
                         <a href="https://view.monday.com/3826151999-fd9d172809e2548360111dc8c9182e23?r=use1" 
                           target="_blank" 
                           rel="noopener noreferrer" 
