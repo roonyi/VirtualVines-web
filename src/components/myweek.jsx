@@ -62,6 +62,7 @@ export const MyWeek = (props) => {
                         </div>
                     </Col>
                 </Row>
+                {/* Video */}
                 <Row className='myweek-row3'>
                     <Col className="d-flex justify-content-center my-4">
                         <video 
@@ -79,6 +80,66 @@ export const MyWeek = (props) => {
                         </video>
                     </Col>
                 </Row>
+                {/* Documentation */}
+                <Container fluid className="features-section">
+                  <Row className="justify-content-center g-4 features-section-row">
+                      <Col lg={4}>
+                        <a href="https://view.monday.com/5081062502-ce52274974268e83c8ca66013de75577?r=use1" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          style={{ textDecoration: 'none', color: 'inherit' }}>
+                          <div className="feature-card">    
+                            <img 
+                                src={props.myweek.pic1} 
+                                alt="How to use" 
+                                className="feature-image"
+                            />
+                          <h3 className="feature-title">{props.myweek.title1}</h3>
+                            {/* <p className="feature-text">
+                                {props.myweek.text1}
+                            </p> */}
+                          </div>
+                        </a>
+                      </Col>
+                      <Col lg={4}>
+                        <a href="https://view.monday.com/8964716204-95b8f950bb30f8a4161dec389eb2f8d5?r=use1" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          style={{ textDecoration: 'none', color: 'inherit' }}>
+                          <div className="feature-card">
+                              <img 
+                                  src={props.myweek.pic2} 
+                                  alt="Forward Thinking" 
+                                  className="feature-image"
+                              />
+                              <h3 className="feature-title">{props.myweek.title2}</h3>
+                              <p className="feature-text">
+                                  {props.myweek.text2}
+                              </p>
+                          </div>
+                        </a>  
+                      </Col>
+
+                      <Col lg={4}>
+                        <a href="https://view.monday.com/3826151999-fd9d172809e2548360111dc8c9182e23?r=use1" 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          style={{ textDecoration: 'none', color: 'inherit' }}>
+                          <div className="feature-card">
+                              <img 
+                                  src={props.myweek.pic3} 
+                                  alt="Partnership" 
+                                  className="feature-image"
+                              />
+                              <h3 className="feature-title">{props.myweek.title3}</h3>
+                              <p className="feature-text">
+                                  {props.myweek.text3}
+                              </p>
+                          </div>
+                        </a>  
+                      </Col>  
+                  </Row>
+                </Container> 
             </Container>
             <Footer footer={props.footer} className='footer'/>
         </>

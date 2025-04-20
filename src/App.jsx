@@ -33,7 +33,13 @@ function App() {
     myweek:{
       logo:'MW_logo_extended.png',
       cards: ['presi1.png','presi2.png','presi3.png','presi4.png'],
-      video: 'Myweek_video1.mp4' 
+      video: 'Myweek_video1.mp4',
+      pic1:'Howtouse.jpg',
+      title1:'How to use', 
+      pic2:'Privacypolicy.jpg',
+      title2:'Privacy Policy',
+      pic3:'Termsofservice.jpg', 
+      title3:'Terms of Service',
     }
   }
   console.log("detail: ", detail)
