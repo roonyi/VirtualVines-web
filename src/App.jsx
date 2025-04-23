@@ -49,7 +49,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<Home header={detail?.header} footer={detail?.footer} home={detail?.home} />} />
-        <Route path="/myweek" element={<MyWeek header={detail?.header} footer={detail?.footer} myweek={detail?.myweek} />} />
+        <Route path="/myweek.jsx" element={<MyWeek header={detail?.header} footer={detail?.footer} myweek={detail?.myweek} />} />
         <Route path="/contact" element={<Contact header={detail?.header} footer={detail?.footer} contact={detail?.contact} />} />
       </Routes>
     </BrowserRouter>
