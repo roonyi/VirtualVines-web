@@ -3,7 +3,7 @@ import Footer from './footer.jsx'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
-export const myweek = (props) => {
+export const MyWeek = (props) => {
      // Constant for the Carousels
      const prevIcon = (
         <div style={{
@@ -146,4 +146,4 @@ export const myweek = (props) => {
     );
 }
 
-export default myweek;
+export default MyWeek;
