@@ -43,7 +43,7 @@ function App() {
       pricingText1:'Start free.',
       pricingText2:'Choose a plan later.',
       pricingText3:'Get started with a 14 day free trial, then your', 
-      pricingText4:'team can enjoy all the features just for ',
+      pricingText4:'team can enjoy all the features for just',
       pricingTextCardTitle1:'Full year',
       pricingTextCardAmount1:'$7',
       pricingTextCardTimeline1:'month (billed yearly)',
