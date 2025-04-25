@@ -74,6 +74,11 @@ export const MyWeek = (props) => {
                         // width="970"
                         className="myweek-video"
                         style={{ objectFit: 'cover' }}
+                        ref={(el) => {
+                          if (el) {
+                              el.playbackRate = 2; // Increase speed (1.0 is normal, 2.0 is double speed)
+                          }
+                        }}
                         >
                         <source src={props.myweek.video} type="video/mp4" />
                         {/* Your browser does not support the video tag. */}
