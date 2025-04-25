@@ -501,13 +501,18 @@
 .pricingText {
   margin: 0;
   font-weight: normal;
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
+  padding: 0;
+
 }
 
-.footerTextbold {
+.pricingTextbold {
   margin: 0;
   font-weight: bold;
   padding-left: 4rem;
+  /* margin-block-start: 0;
+  margin-block-end: 0; */
+  padding: 0;
 }
 
 .feature-pricing-title {

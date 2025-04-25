@@ -82,10 +82,10 @@ export const MyWeek = (props) => {
                 </Row>
                 <Row className='pricing'>
                   <Col>
-                    <h1 className="footerTextbold">{props.myweek.pricingText1}</h1>
+                    <h1 className="pricingTextbold">{props.myweek.pricingText1}</h1>
                     {/* <h2 className="footerText">{props.myweek.pricingText2}</h2>   */}
-                    <h3 className="footerText">{props.myweek.pricingText3}</h3>
-                    <h3 className="footerText">{props.myweek.pricingText4}</h3>
+                    <h3 className="pricingText">{props.myweek.pricingText3}</h3>
+                    <h3 className="pricingText">{props.myweek.pricingText4}</h3>
                   </Col>
                   <Col>
                     <div className="feature-card-doc">    
