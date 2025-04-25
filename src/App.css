@@ -88,7 +88,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 3rem 0rem;
+  padding: 3rem 3rem;
   background-color: #1FE7B8;
 }
 
@@ -473,9 +473,29 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 6rem 1rem;
+  padding: 6rem 6rem;
   background-color: #1FE7B8;
   gap: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .pricing {
+    flex-direction: column
+    /* flex-wrap: wrap; */
+    /* gap: 3rem; */
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .pricing {
+    width: 20rem;
+  }
 }
 
 .pricingText {
