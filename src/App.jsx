@@ -50,6 +50,7 @@ function App() {
       pricingTextCardTitle2:'Full month',
       pricingTextCardAmount2:'$9',
       pricingTextCardTimeline2:'month (billed monthly)',
+      installNowTitle:'Get MyWeek Now!',
     }
   }
   console.log("detail: ", detail)

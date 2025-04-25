@@ -85,6 +85,17 @@ export const MyWeek = (props) => {
                         </video>
                     </Col>
                 </Row>
+                <Row>
+                  <h3 className="feature-pricing-title">{props.myweek.installNowTitle}</h3>
+                  <a href="https://auth.monday.com/oauth2/authorize?client_id=492bfc43babd4a7534a3e937fe2ba28b&response_type=install">
+                    <img
+                      alt="Add to monday.com"
+                      height="32"
+                      className='img-monday'
+                      src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/uploads/Tal/4b5d9548-0598-436e-a5b6-9bc5f29ee1d9_Group12441.png"
+                    />
+                  </a>
+                </Row>
                 <Row className='pricing'>
                   <Col>
                     <h1 className="pricingTextbold">{props.myweek.pricingText1}</h1>
