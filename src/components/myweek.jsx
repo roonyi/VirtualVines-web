@@ -80,6 +80,38 @@ export const MyWeek = (props) => {
                         </video>
                     </Col>
                 </Row>
+                <Row className='pricing'>
+                  <Col>
+                    <h1 className="footerTextbold">{props.myweek.pricingText1}</h1>
+                    {/* <h2 className="footerText">{props.myweek.pricingText2}</h2>   */}
+                    <h3 className="footerText">{props.myweek.pricingText3}</h3>
+                    <h3 className="footerText">{props.myweek.pricingText4}</h3>
+                  </Col>
+                  <Col>
+                    <div className="feature-card-doc">    
+                      <h3 className="feature-pricing-text">{props.myweek.pricingTextCardTitle1}</h3>
+                      <h1 className="feature-pricing-title">{props.myweek.pricingTextCardAmount1}</h1>
+                      <h3 className="feature-pricing-text">{props.myweek.pricingTextCardTimeline1}</h3>
+                      {/* <p className="feature-text">
+                          pricingTextCardTitle1:'Full year',
+                          pricingTextCardAmount1:'$7',
+                          pricingTextCardTimeline1:'month (billed yearly)',
+                      </p> */}
+                    </div>
+                  </Col>
+                  <Col>
+                    <div className="feature-card-doc">    
+                      <h3 className="feature-pricing-text">{props.myweek.pricingTextCardTitle2}</h3>
+                      <h1 className="feature-pricing-title">{props.myweek.pricingTextCardAmount2}</h1>
+                      <h3 className="feature-pricing-text">{props.myweek.pricingTextCardTimeline2}</h3>
+                      {/* <p className="feature-text">
+                          pricingTextCardTitle1:'Full year',
+                          pricingTextCardAmount1:'$7',
+                          pricingTextCardTimeline1:'month (billed yearly)',
+                      </p> */}
+                    </div>
+                  </Col>
+                </Row>
                 {/* Documentation */}
                 <Container fluid className="features-section">
                   <Row className="justify-content-center g-4 features-section-row">
@@ -88,7 +120,7 @@ export const MyWeek = (props) => {
                           target="_blank" 
                           rel="noopener noreferrer" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
-                          <div className="feature-card">    
+                          <div className="feature-card-doc">    
                             <img 
                                 src={props.myweek.pic1} 
                                 alt="How to use" 
@@ -106,7 +138,7 @@ export const MyWeek = (props) => {
                           target="_blank" 
                           rel="noopener noreferrer" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
-                          <div className="feature-card">
+                          <div className="feature-card-doc">
                               <img 
                                   src={props.myweek.pic2} 
                                   alt="Forward Thinking" 
@@ -125,7 +157,7 @@ export const MyWeek = (props) => {
                           target="_blank" 
                           rel="noopener noreferrer" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
-                          <div className="feature-card">
+                          <div className="feature-card-doc">
                               <img 
                                   src={props.myweek.pic3} 
                                   alt="Partnership" 

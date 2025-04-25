@@ -40,6 +40,16 @@ function App() {
       title2:'Privacy Policy',
       pic3:'Termsofservice.jpg', 
       title3:'Terms of Service',
+      pricingText1:'Start free.',
+      pricingText2:'Choose a plan later.',
+      pricingText3:'Get started with a 14 day free trial, then your', 
+      pricingText4:'team can enjoy all the features just for ',
+      pricingTextCardTitle1:'Full year',
+      pricingTextCardAmount1:'$7',
+      pricingTextCardTimeline1:'month (billed yearly)',
+      pricingTextCardTitle2:'Full month',
+      pricingTextCardAmount2:'$9',
+      pricingTextCardTimeline2:'month (billed monthly)',
     }
   }
   console.log("detail: ", detail)

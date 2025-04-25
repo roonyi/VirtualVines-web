@@ -178,7 +178,7 @@
 }
 /* Features Section */
 .features-section {
-  padding: 4rem 2rem;
+  padding: 3rem 1rem 0rem;
   background-color: #041510; 
 }
 
@@ -446,4 +446,63 @@
   .myweek-video {
     width: 20rem;
   }
+}
+/* cards*/
+.feature-card-doc {
+  background-color: #041510;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center content horizontally */
+  padding: 1rem;  
+  /* Fixed dimensions */
+  width: 360px;  /* Fixed width for all cards */
+  min-height: 200px;  /* Minimum height for all cards */
+  flex: 0 0 auto;  /* Prevent flex growing/shrinking */
+}
+.feature-card-doc:hover {
+  transform: translateY(-5px);
+}
+
+/*pricing*/
+.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 6rem 1rem;
+  background-color: #1FE7B8;
+  gap: 3rem;
+}
+
+.pricingText {
+  margin: 0;
+  font-weight: normal;
+  padding-left: 4rem;
+}
+
+.footerTextbold {
+  margin: 0;
+  font-weight: bold;
+  padding-left: 4rem;
+}
+
+.feature-pricing-title {
+  color: #1FE7B8;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature-pricing-text {
+  color: #1FE7B8;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  /* padding: 0rem 2rem; */
 }
