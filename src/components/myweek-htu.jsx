@@ -1,6 +1,6 @@
 import Header from './header.jsx'
 import Footer from './footer.jsx'
-import { Container} from 'react-bootstrap';
+import { Container, Row} from 'react-bootstrap';
 
 export const MyWeekHTU = (props) => {
 
@@ -8,6 +8,9 @@ export const MyWeekHTU = (props) => {
         <>
             <Header header={props.header} className='header'/>
             <Container fluid className="myweek-section">
+                <Row className='myweek-row'>
+                    <img src={props.myweek.logo} className="mwLogo" alt="mwLogo" />
+                </Row>
                 <iframe 
                     src={props.myweek.htuPath}
                     width="100%"

@@ -340,7 +340,9 @@
   align-items: center;
   text-align: center;
 }
-
+.myweek-row {
+  margin: 1rem;
+}
 .myweek-row1 {
   background-color:#1FE7B8;
 }
