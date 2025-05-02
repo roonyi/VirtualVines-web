@@ -29,3 +29,5 @@ local
 # Useful keys
 .env
 *.exe
+
+.mappsrc
