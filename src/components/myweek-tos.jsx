@@ -1,6 +1,7 @@
 import Header from './header.jsx'
 import Footer from './footer.jsx'
 import { Container, Row } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 export const MyWeekTOS = (props) => {
 
@@ -9,7 +10,11 @@ export const MyWeekTOS = (props) => {
             <Header header={props.header} className='header'/>
             <Container fluid className="myweek-section">
                 <Row className='myweek-row'>
-                    <img src={props.myweek.logo} className="mwLogo" alt="mwLogo" />
+                    <NavLink 
+                        to="/myweek" 
+                        style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <img src={props.myweek.logo} className="mwLogo" alt="mwLogo" />
+                    </NavLink>    
                 </Row>
                 <iframe 
                     src={props.myweek.tosPath}
