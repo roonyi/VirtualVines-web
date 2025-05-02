@@ -23,7 +23,11 @@ export const Header = (props) => {
         <Container fluid>
             <Row className="header">
                 <Col>
-                    <img src={props.header.logo} className="vvLogo" alt="vvLogo" />
+                    <NavLink to="/"
+                        onClick={() => handleLinkClick('/')}
+                        >
+                        <img src={props.header.logo} className="vvLogo" alt="vvLogo" />        
+                    </NavLink>
                 </Col>
                 <Col>
                     <nav className="navHeader">

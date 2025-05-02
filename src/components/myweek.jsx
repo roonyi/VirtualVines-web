@@ -2,6 +2,7 @@ import Header from './header.jsx'
 import Footer from './footer.jsx'
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import { NavLink } from 'react-router-dom';
 
 export const MyWeek = (props) => {
      // Constant for the Carousels
@@ -85,7 +86,7 @@ export const MyWeek = (props) => {
                         </video>
                     </Col>
                 </Row>
-                <Row>
+                <Row> {/*link to implement on Monday*/}
                   <h3 className="feature-pricing-title">{props.myweek.installNowTitle}</h3>
                   <a href="https://auth.monday.com/oauth2/authorize?client_id=492bfc43babd4a7534a3e937fe2ba28b&response_type=install">
                     <img
@@ -96,7 +97,7 @@ export const MyWeek = (props) => {
                     />
                   </a>
                 </Row>
-                <Row className='pricing'>
+                <Row className='pricing'> {/*Pricing*/}
                   <Col>
                     <h1 className="pricingTextbold">{props.myweek.pricingText1}</h1>
                     {/* <h2 className="footerText">{props.myweek.pricingText2}</h2>   */}
@@ -127,64 +128,51 @@ export const MyWeek = (props) => {
                       </p> */}
                     </div>
                   </Col>
-                </Row>
-                {/* Documentation */}
+                </Row>{/* Documentation */}
                 <Container fluid className="features-section">
                   <Row className="justify-content-center g-4 features-section-row">
                       <Col lg={3}>
-                        <a href="https://view.monday.com/5081062502-ce52274974268e83c8ca66013de75577?r=use1" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <NavLink 
+                          to="/myweek-htu" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
                           <div className="feature-card-doc">    
                             <img 
-                                src={props.myweek.pic1} 
+                                src={props.myweek.htuPic} 
                                 alt="How to use" 
                                 className="feature-image"
                             />
-                          <h3 className="feature-title">{props.myweek.title1}</h3>
-                            {/* <p className="feature-text">
-                                {props.myweek.text1}
-                            </p> */}
+                            <h3 className="feature-title">{props.myweek.htuTitle}</h3>
                           </div>
-                        </a>
+                        </NavLink>
                       </Col>
                       <Col lg={3}>
-                        <a href="https://view.monday.com/8964716204-95b8f950bb30f8a4161dec389eb2f8d5?r=use1" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <NavLink 
+                          to="/myweek-privacy" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
                           <div className="feature-card-doc">
                               <img 
-                                  src={props.myweek.pic2} 
-                                  alt="Forward Thinking" 
+                                  src={props.myweek.privacyPic} 
+                                  alt="Privacy Police" 
                                   className="feature-image"
                               />
-                              <h3 className="feature-title">{props.myweek.title2}</h3>
-                              <p className="feature-text">
-                                  {props.myweek.text2}
-                              </p>
+                              <h3 className="feature-title">{props.myweek.privacyTitle}</h3>
                           </div>
-                        </a>  
+                        </NavLink>  
                       </Col>
 
                       <Col lg={3}>
-                        <a href="https://view.monday.com/3826151999-fd9d172809e2548360111dc8c9182e23?r=use1" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                      <NavLink 
+                          to="/myweek-tos" 
                           style={{ textDecoration: 'none', color: 'inherit' }}>
                           <div className="feature-card-doc">
                               <img 
-                                  src={props.myweek.pic3} 
-                                  alt="Partnership" 
+                                  src={props.myweek.tosPic} 
+                                  alt="Terms of Service" 
                                   className="feature-image"
                               />
-                              <h3 className="feature-title">{props.myweek.title3}</h3>
-                              <p className="feature-text">
-                                  {props.myweek.text3}
-                              </p>
+                              <h3 className="feature-title">{props.myweek.tosTitle}</h3>
                           </div>
-                        </a>  
+                        </NavLink>  
                       </Col>  
                   </Row>
                 </Container> 
